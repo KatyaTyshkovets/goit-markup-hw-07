@@ -1,1 +1,200 @@
-/* No CSS *//*# sourceMappingURL=portfolio.css.map */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-text-color: #757575;
+  --primary-bcr-color: #e5e5e5;
+  --primary-white-color: #ffffff;
+  --primary-bcrr-color: #8680a3;
+  --color-address: rgba(255, 255, 255, 0.6);
+  --bcr-footer: #2f303a;
+  --btn-hov-foc-color: #2196f3;
+  --bcg-team: #f5f4fa;
+  --timing-fuction: cubic-bezier(0.4, 0, 0.2, 1);
+  --btn-hover: #188ce8;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.container-contact {
+  margin-left: auto;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-item > .contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-item .link {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .link {
+  text-decoration: none;
+  transition: color 250ms var(--timing-fuction);
+}
+
+.site-nav .link.curent {
+  color: var(--accent-color);
+}
+
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+  align-items: center;
+}
+
+.site-nav .link {
+  display: block;
+  color: var(--primary-text-color);
+}
+
+.site-nav,
+.section-title {
+  color: var(--primary-text-color);
+}
+
+.logo {
+  font-family: Raleway, cursive;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-style {
+  color: var(--primary-text-color);
+}
+
+.auth-nav .link:focus,
+.auth-nav .link:hover {
+  color: var(--accent-color);
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+
+.auth-nav .link {
+  text-decoration: none;
+  transition: color 250ms var(--timing-fuction);
+  color: var(--title-text-color);
+}
+
+.auth-nav,
+.site-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  display: flex;
+  align-items: center;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-link {
+  color: var(--title-text-color);
+  transition: color 250ms var(--timing-fuction);
+}
+
+.contact-link:focus,
+.contact-link:hover {
+  color: var(--btn-hov-foc-color);
+}
+
+.link.curent::after {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: var(--btn-hov-foc-color);
+  content: '';
+  border-radius: 2px;
+  bottom: -32px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms var(--timing-fuction);
+}
+
+.link.curent {
+  position: relative;
+}
+
+.link.curent:hover::after,
+.link.curent:focus::after {
+  opacity: 1;
+}
+/*# sourceMappingURL=portfolio.css.map */

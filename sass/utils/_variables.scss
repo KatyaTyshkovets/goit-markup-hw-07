@@ -16,3 +16,18 @@ $secondary-size: 16px;
 $color-border: #afb1b8;
 $margin-bottom: 50px;
 $border-radius: 4px;
+
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-text-color: #757575;
+  --primary-bcr-color: #e5e5e5;
+  --primary-white-color: #ffffff;
+  --primary-bcrr-color: #8680a3;
+  --color-address: rgba(255, 255, 255, 0.6);
+  --bcr-footer: #2f303a;
+  --btn-hov-foc-color: #2196f3;
+  --bcg-team: #f5f4fa;
+  --timing-fuction: cubic-bezier(0.4, 0, 0.2, 1);
+  --btn-hover: #188ce8;
+}

@@ -1,5 +1,19 @@
-@import "./utils/reset";
+@import './utils/reset';
 @import './utils/variables';
-
-@import './utils/visually-hidden';
+@import './utils/common';
+@import './components/container';
+@import './components/header';
 @import './components/logo';
+@import './components/contact';
+
+@import './utils/hidden';
+
+@import './components/hero';
+@import './components/feature';
+@import './components/modalka';
+@import './components/form';
+@import './components/team';
+@import './components/work';
+@import './components/client';
+
+@import './components/footer';
