@@ -1,7 +1,11 @@
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/common';
+@import './components/container';
 @import './components/header';
 @import './components/logo';
 @import './components/contact';
-
+@import './utils/hidden';
 @import './components/btn';
 @import './components/projects';
 @import './components/footer';

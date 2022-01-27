@@ -1,11 +1,11 @@
 .logo {
   font-family: Raleway, cursive;
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: none;
 
   font-size: 26px;
   line-height: 1.19;
 }
 .logo-style {
-  color: var(--primary-text-color);
+  color: $color-text;
 }

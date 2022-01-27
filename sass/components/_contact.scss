@@ -1,16 +1,16 @@
-.auth-nav .link:focus,
-.auth-nav .link:hover {
-  color: var(--accent-color);
-}
 .auth-nav {
   margin-left: auto;
+  &.link:focus,
+  &.link:hover {
+    color: $accent-color;
+  }
 }
 .auth-nav .link {
   text-decoration: none;
 
-  transition: color 250ms var(--timing-fuction);
+  transition: color $duration $timing-fuction;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .auth-nav,
@@ -33,31 +33,31 @@
   fill: currentColor;
 }
 .contact-link {
-  color: var(--title-text-color);
+  color: $title-text-color;
 
-  transition: color 250ms var(--timing-fuction);
-}
-.contact-link:focus,
-.contact-link:hover {
-  color: var(--btn-hov-foc-color);
+  transition: color $duration $timing-fuction;
+  &:hover,
+  &:focus {
+    color: $btn-hov-foc-color;
+  }
 }
 
-.link.curent::after {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: var(--btn-hov-foc-color);
-  content: '';
-  border-radius: 2px;
-  bottom: -32px;
-  left: 0;
-  opacity: 0;
-  transition: opacity 250ms var(--timing-fuction);
-}
 .link.curent {
   position: relative;
-}
-.link.curent:hover::after,
-.link.curent:focus::after {
-  opacity: 1;
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $btn-hov-foc-color;
+    content: '';
+    border-radius: 2px;
+    bottom: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity $duration $timing-fuction;
+  }
 }
