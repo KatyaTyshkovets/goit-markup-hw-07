@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 .project-title {
-  color: $color-text;
+  color: $primary-color;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -28,7 +28,7 @@
 }
 
 .project-text {
-  color: $color-text;
+  color: $primary-color;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -51,7 +51,7 @@
   position: absolute;
   display: flex;
   bottom: 0;
-  color: white;
+  color: $primary-white-color;
   transform: translateY(101%);
   transition: transform $duration $timing-fuction;
   background: $project-bcr;

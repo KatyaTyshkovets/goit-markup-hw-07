@@ -1,11 +1,11 @@
 .page-footer {
-  background-color: var(--bcr-footer);
+  background-color: $bcr-footer;
 
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .logo-styles {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 .footer {
   margin-top: 20px;
@@ -26,15 +26,16 @@
   text-decoration: none;
 }
 .footer .link {
-  color: var(--color-address);
+  color: $color-address;
 
-  transition: color 250ms var(--timing-fuction);
+  transition: color $duration $timing-fuction;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+  }
 }
 
-.footer .link:hover,
-.footer .link:focus {
-  color: var(--primary-white-color);
-}
 .footer-center {
   margin-left: 70px;
   margin-right: auto;
@@ -44,8 +45,7 @@
   align-items: baseline;
 }
 .footer-center-list {
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
   justify-content: left;
 }
 
@@ -53,48 +53,47 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
   justify-content: center;
 
-  transition: backround-color 250ms var(--timing-fuction);
+  transition: backround-color $duration $timing-fuction;
+  &:hover,
+  &:focus {
+    background-color: $btn-hov-foc-color;
+  }
 }
 .section-footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--primary-white-color);
-  display: flex;
-  align-items: center;
+  color: $primary-white-color;
+  @extend %center-flex;
 
   margin-bottom: 20px;
 }
 .footer-center-item + .footer-center-item {
   margin-left: 10px;
 }
-.footer-link:focus,
-.footer-link:hover {
-  background-color: var(--btn-hov-foc-color);
-}
+
 .footer-link:hover,
 .footer-icon,
 .footer-link:focus,
 .footer-icon {
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 .footer-center-item {
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);
+  background: $footer-color-item;
   border-radius: 50%;
 }
 .send-form {
   display: block;
   width: 200px;
   height: 50px;
-  background-color: var(--btn-hov-foc-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: $btn-hov-foc-color;
+  box-shadow: 0px 4px 4px $shadow-foot;
   border-radius: 4px;
   border: transparent;
 
@@ -104,7 +103,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 
   padding: 10px 55px;
   margin-right: auto;
@@ -112,12 +111,14 @@
 
   cursor: pointer;
 
-  transition: background-color 250 ms --timing-fuction;
+  transition: background-color $duration $timing-fuction;
+
+  &:focus,
+  &:hover {
+    background-color: $btn-hover;
+  }
 }
-.send-form:focus,
-.send-form:hover {
-  background-color: var(--btn-hover);
-}
+
 .footer-form label {
   font-weight: 700;
   font-size: 14px;
@@ -125,29 +126,28 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 .spam-form input {
   padding: 0;
   width: 358px;
   height: 50px;
-  background: var(--bcr-footer);
-  color: var(--primary-white-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: $bcr-footer;
+  color: $primary-white-color;
+  border: 1px solid $footer-border;
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow $drop-shadow;
   padding: 16px;
 }
 .spam-form {
-  display: flex;
+  @extend %center-flex;
   justify-content: space-between;
-  align-items: center;
 
   margin-top: 20px;
 }
 
 .spam-form::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: $color-address;
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
@@ -155,19 +155,18 @@
 .footer-btn {
   width: 200px;
   height: 50px;
-  display: flex;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  align-items: center;
+  @extend %center-flex;
   justify-content: center;
   text-align: center;
-  background: var(--btn-hov-foc-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: $btn-hov-foc-color;
+  box-shadow: $drop-shadow;
   border-radius: 4px;
   border: transparent;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   margin-left: 12px;
   padding: 10px;
   cursor: pointer;

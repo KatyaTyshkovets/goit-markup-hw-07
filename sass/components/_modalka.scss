@@ -4,9 +4,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $bcr-modal;
   opacity: 1;
-  transition: opacity 250ms var(--timing-fuction), visibility 250ms var(--timing-fuction);
+  transition: opacity $duration $timing-fuction, visibility $duration $timing-fuction;
 }
 .modal {
   position: absolute;
@@ -14,14 +14,13 @@
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-fuction);
+  transition: transform $duration $timing-fuction;
 
   min-width: 528px;
   min-height: 581px;
-  background: var(--primary-white-color);
+  background: $primary-white-color;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $team-shadow;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -40,20 +39,18 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--primary-white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  align-items: center;
-  justify-content: center;
+  background: $primary-white-color;
+  border: 1px solid $border-modal;
+  @extend %center-flex;
   margin: 8px;
   padding: 0;
 
   cursor: pointer;
 
-  transition: fill 250ms --timing-fuction, border 250ms --timing-fuction;
-}
-
-.button-modal:focus,
-.button-modal:hover {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  transition: fill $duration $timing-fuction, border $duration $timing-fuction;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
 }

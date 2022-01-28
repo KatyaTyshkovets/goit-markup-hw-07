@@ -10,15 +10,14 @@
 
   transition: color $duration $timing-fuction;
 
-  color: $title-text-color;
+  color: $title-text;
 }
 
 .auth-nav,
 .site-nav {
   font-weight: 500;
   line-height: 1.14;
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
 }
 .mail-icon {
   width: 16px;
@@ -33,7 +32,7 @@
   fill: currentColor;
 }
 .contact-link {
-  color: $title-text-color;
+  color: $title-text;
 
   transition: color $duration $timing-fuction;
   &:hover,

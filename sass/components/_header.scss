@@ -5,16 +5,14 @@
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
 }
 .container-contact {
   margin-left: auto;
 }
 
 .header-list {
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
 }
 .header-logo {
   margin-right: 93px;
@@ -23,12 +21,10 @@
   margin-right: 50px;
 }
 .header-item > .contact-link {
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
 }
 .header-item .link {
-  display: flex;
-  align-items: center;
+  @extend %center-flex;
 }
 .site-nav .link {
   text-decoration: none;
@@ -41,7 +37,7 @@
 .site-nav .link {
   display: block;
 
-  color: $color-text;
+  color: $primary-color;
 
   &:hover,
   &:focus {
@@ -51,5 +47,5 @@
 }
 .site-nav,
 .section-title {
-  color: $color-text;
+  color: $primary-color;
 }

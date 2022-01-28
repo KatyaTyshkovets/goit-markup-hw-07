@@ -3,7 +3,7 @@
   padding-top: 94px;
 }
 .item-button {
-  color: $color-text;
+  color: $primary-color;
 
   font-family: inherit;
   font-style: normal;
@@ -22,8 +22,7 @@
   &:focus {
     box-shadow: $btn-shadow;
     background-color: $accent-bcr;
-    color: yellowgreen;
-
+    color: $primary-white-color;
     cursor: pointer;
   }
 }
