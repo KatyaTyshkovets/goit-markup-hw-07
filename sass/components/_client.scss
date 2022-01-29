@@ -2,7 +2,7 @@
   @extend %center-flex;
   justify-content: center;
 }
-.client-link {
+.client-list__link {
   width: 170px;
   height: 92px;
   @extend %center-flex;
@@ -23,9 +23,23 @@
 
   transition: color $duration $timing-fuction;
 }
-.client-icon {
+.client-list__icon {
   fill: currentColor;
 }
+.client {
+  margin-bottom: 50px;
+}
 .section-client {
+  padding-top: 94px;
+}
+.section-client__title {
+  color: $primary-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0;
   margin-bottom: 50px;
 }

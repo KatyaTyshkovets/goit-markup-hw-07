@@ -4,26 +4,24 @@
   border-bottom: 1px solid $border-bottom;
 }
 
-.header-container {
+.header__container {
   @extend %center-flex;
-}
-.container-contact {
-  margin-left: auto;
+  justify-content: center;
 }
 
-.header-list {
+.site-list {
   @extend %center-flex;
 }
-.header-logo {
+.header__logo {
   margin-right: 93px;
 }
-.header-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.header-item > .contact-link {
+.site-nav__item > .auth-nav__link {
   @extend %center-flex;
 }
-.header-item .link {
+.site-nav__item .link {
   @extend %center-flex;
 }
 .site-nav .link {
@@ -35,7 +33,7 @@
 }
 
 .site-nav .link {
-  display: block;
+  @extend %center-flex;
 
   color: $primary-color;
 
@@ -45,7 +43,6 @@
     align-items: center;
   }
 }
-.site-nav,
-.section-title {
+.site-nav {
   color: $primary-color;
 }

@@ -1,8 +1,8 @@
-.section-project {
+.project {
   margin-bottom: 50px;
   padding-top: 94px;
 }
-.item-button {
+.item__button {
   color: $primary-color;
 
   font-family: inherit;
@@ -16,7 +16,7 @@
   border: none transparent;
 
   transition: box-shadow $duration $timing-fuction, background-color $duration $timing-fuction,
-    color $duration $timing-fuction;
+    color$duration $timing-fuction;
 
   &:hover,
   &:focus {
